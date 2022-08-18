@@ -10,6 +10,7 @@ gameBtn.addEventListener("click", () => {
 
 let X = 0;
 let O = 0;
+let tie = 0;
 let state = 0;
 
 const slotsColl = document.getElementsByClassName("slot");
@@ -46,7 +47,7 @@ slotsArr.forEach(slot => {
             slotsText[0].textContent = "O"
         }
 
-        slotsText[0].style.opacity = "0"
+        slotsText[0].style.opacity = "0.6"
 
         state++
 
@@ -221,7 +222,7 @@ slotsArr.forEach(slot => {
             s7t.textContent != "" &&
             s8t.textContent != "" &&
             s9t.textContent != "") {
-                const tie = 1
+                tie++
             }
 
         if (X || O || tie) {
