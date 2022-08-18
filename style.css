@@ -39,6 +39,8 @@ body {
 
 .slot {
     position: relative;
+    background-color: #7469b8;
+    transition: background-color .4s;
 }
 
 .slot:hover {

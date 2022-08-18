@@ -37,9 +37,9 @@ const s8t = document.getElementById("s8t")
 const s9t = document.getElementById("s9t")
 
 slotsArr.forEach(slot => {
-    const slotsText = Array.from(slot.children)
-
     slot.addEventListener("click", () => {
+
+        const slotsText = Array.from(slot.children)
         
         if (state % 2 == 0) {
             slotsText[0].textContent = "X"
@@ -47,7 +47,9 @@ slotsArr.forEach(slot => {
             slotsText[0].textContent = "O"
         }
 
+        
         slotsText[0].style.opacity = "0"
+        slot.style.backgroundColor = "#5a5291"
 
         state++
 
@@ -238,5 +240,6 @@ slotsArr.forEach(slot => {
 
         }
     })
-});
 
+    
+});
