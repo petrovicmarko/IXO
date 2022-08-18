@@ -47,7 +47,7 @@ slotsArr.forEach(slot => {
             slotsText[0].textContent = "O"
         }
 
-        slotsText[0].style.opacity = "0.6"
+        slotsText[0].style.opacity = "0"
 
         state++
 
