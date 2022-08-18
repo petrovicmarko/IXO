@@ -23,3 +23,24 @@ body {
 .play:hover {
     cursor: pointer;
 }
+
+.field {
+    display: none;
+    height: 30rem;
+    width: 30rem;
+    grid-template-columns: auto auto auto;
+    background-color: #7469b8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: .2rem solid black;
+}
+
+#s1, #s2, #s3, #s4, #s5, #s6 {
+    border-bottom: .2rem solid black;
+}
+
+#s1, #s2, #s4, #s5, #s7, #s8 {
+    border-right: .2rem solid black;
+}
