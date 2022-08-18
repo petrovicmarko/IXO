@@ -212,7 +212,19 @@ slotsArr.forEach(slot => {
             s7t.style.color = "#1cd3e0"
         }
 
-        if (X || O) {
+        if (s1t.textContent != "" &&
+            s2t.textContent != "" &&
+            s3t.textContent != "" &&
+            s4t.textContent != "" &&
+            s5t.textContent != "" &&
+            s6t.textContent != "" &&
+            s7t.textContent != "" &&
+            s8t.textContent != "" &&
+            s9t.textContent != "") {
+                const tie = 1
+            }
+
+        if (X || O || tie) {
             s1t.style.opacity = "1"
             s2t.style.opacity = "1"
             s3t.style.opacity = "1"
