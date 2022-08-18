@@ -37,6 +37,24 @@ body {
     border: .2rem solid black;
 }
 
+.slot {
+    position: relative;
+}
+
+.slot:hover {
+    cursor: pointer;
+}
+
+.slot_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    opacity: 1;
+    transition: opacity .5s;
+}
+
 #s1, #s2, #s3, #s4, #s5, #s6 {
     border-bottom: .2rem solid black;
 }
